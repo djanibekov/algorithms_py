@@ -1,3 +1,6 @@
+#! works only with equal number of digits of both inputs
+
+
 def karatsuba(x, y):
 	size = len(str(x))
 	if(size == 1):
