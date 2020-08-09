@@ -1,4 +1,4 @@
-def merge(first, second, size):
+def merge(first, second):
     i = 0 
     j = 0
     merged = []
@@ -29,7 +29,7 @@ def merge_sort(array):
     left = merge_sort(array[:mid])
     right = merge_sort(array[mid:])
 
-    return merge(left, right, length)
+    return merge(left, right)
 
 
 print(merge_sort([1, 3, 5, 2, 4, 6]))
