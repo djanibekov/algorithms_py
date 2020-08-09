@@ -1,6 +1,15 @@
 inversion_count = 0
 
 def inversion_counter_conquer(first, second):
+    """[This function counts #inversions while merging two lists/arrays ]
+
+    Args:
+        first ([list]): [left unsorted half]
+        second ([list]): [right unsorted half]
+
+    Returns:
+        [tuple]: [(first: merged list of left and right halves, second: #inversions)]
+    """
     i = 0 
     j = 0
     length_of_first = len(first)
