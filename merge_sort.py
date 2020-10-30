@@ -1,23 +1,18 @@
 def merge(first, second):
     i = 0 
     j = 0
+    len1 = len(first)
+    len2 = len(second)
     merged = []
     #? combining two lists
-    while i < len(first) and j < len(second):
-        if(first[i] < second[j]):
+    while (i+j < len1+len2):
+        if(j>len2 or (i<len1 and first[i] < second[j])):
             merged.append(first[i])
             i = i + 1
         else:
             merged.append(second[j])
             j = j + 1
 
-    #! extra check whether element is left
-    while i < len(first):
-        merged.append(first[i])
-        i = i + 1
-    while j < len(second):
-        merged.append(second[j])
-        j = j + 1
 
     return merged
 
