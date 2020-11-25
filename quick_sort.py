@@ -41,4 +41,3 @@ with open('quick_sort.txt') as f:
 
 
 print(quick_sort(array))
-print(count)
